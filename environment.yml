@@ -1,0 +1,29 @@
+name: 2022-08-03-codas-hep-columnar-tutorial
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - ipympl
+  - numexpr
+  - numba
+  - jax
+  - jaxlib
+  - xrootd
+  - root
+  - zstandard
+  - zstd
+  - lz4
+  - python-xxhash
+  - dask
+  - python-graphviz
+  - pyarrow
+  - pandas
+  - pip
+  - pip:
+      - uproot
+      - awkward
+      - vector
+      - hist[plot]
+      - particle
