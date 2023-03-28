@@ -20,10 +20,11 @@ dependencies:
   - python-graphviz
   - pyarrow
   - pandas
+  - uproot
+  - awkward
+  - vector
+  - hist[plot]
+  - particle
   - pip
   - pip:
-      - uproot
-      - awkward
-      - vector
-      - hist[plot]
-      - particle
+      - jupyterlab_rise
