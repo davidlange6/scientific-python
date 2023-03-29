@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python
+  - jupyterlab-deck
   - numpy
   - matplotlib
   - ipympl
@@ -26,6 +27,3 @@ dependencies:
   - vector
   - hist[plot]
   - particle
-  - pip
-  - pip:
-      - jupyterlab_rise
