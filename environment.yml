@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python
   - jupyterlab-deck
+  - jupyterlab-mathjax3
   - numpy
   - matplotlib
   - ipympl
