@@ -2,29 +2,31 @@ name: 2023-05-01-hsf-india-tutorial
 channels:
   - conda-forge
 dependencies:
-  - python
-  - jupyterlab-deck
-  - jupyterlab-mathjax3
-  - numpy
-  - matplotlib
-  - ipympl
+  - awkward
+  - cudatoolkit
+  - cupy
+  - cxx-compiler
+  - fsspec
   - h5py
-  - numexpr
-  - numba
+  - hepunits
+  - hist
+  - ipympl
   - jax
   - jaxlib
-  - xrootd
-  - root
+  - jupyterlab-deck
+  - jupyterlab-mathjax3
+  - lz4
+  - matplotlib
+  - numba
+  - numexpr
+  - numpy
+  - pandas
+  - particle
+  - pyarrow
+  - pybind11
+  - python
+  - python-xxhash
+  - uproot
+  - vector
   - zstandard
   - zstd
-  - lz4
-  - python-xxhash
-  - dask
-  - python-graphviz
-  - pyarrow
-  - pandas
-  - uproot
-  - awkward
-  - vector
-  - hist[plot]
-  - particle
