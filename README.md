@@ -11,9 +11,14 @@ wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforg
 bash Mambaforge-Linux-x86_64.sh
 ```
 
-Accept the license and all of the defaults, including "add startup to your shell."
+Answer the questions:
 
-**Step 3:** log out of gpu01.indiacms.res.in and back in again. _(Unclear if this step is necessary.)_
+  1. "Press ENTER to continue" (do it)
+  2. "Do you accept the license terms?": "yes"
+  3. "Mambaforge will now be installed into this location": accept the default by pressing enter
+  4. "Do you wish the installer to initialize Mambaforge by running conda init": "yes"
+
+**Step 3:** log out of gpu01.indiacms.res.in and back in again.
 
 **Step 4:** clone this repository and `cd` into it.
 
