@@ -43,6 +43,7 @@ mamba activate 2023-05-01-hsf-india-tutorial
 **Step 8:** in the port-forwarding terminal, start JupyterLab.
 
 ```bash
+cd 2023-05-01-hsf-india-tutorial
 jupyter lab --no-browser --port=8889
 ```
 
