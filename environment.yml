@@ -4,7 +4,7 @@ channels:
 dependencies:
   - awkward==2.1.2
   - clang-tools==15.0.7
-  - cudatoolkit==11.8.0
+  - cudatoolkit==11.3.1
   - cupy==12.0.0
   - cxx-compiler==1.5.2
   - fsspec==2023.4.0
