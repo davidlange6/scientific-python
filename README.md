@@ -1,10 +1,8 @@
-# 2023-05-01-hsf-india-tutorial
+# To get exactly the same environment we used in the lectures
 
-**Quickstart (I'll format this nicely later).**
+(Assumes that you have a GPU for the GPU packages.)
 
-**Step 1:** log into gpu01.indiacms.res.in with your username and password.
-
-**Step 2:** install Mambaforge (dependency manager for all the software we'll be using).
+**Step 1:** install Mambaforge (dependency manager for all the software we'll be using).
 
 ```bash
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh
@@ -18,40 +16,31 @@ Answer the questions:
   3. "Mambaforge will now be installed into this location": accept the default by pressing enter
   4. "Do you wish the installer to initialize Mambaforge by running conda init": "yes"
 
-**Step 3:** log out of gpu01.indiacms.res.in and back in again.
+**Step 2:** log out of the shell that you're using and back in again (or open a new one).
 
-**Step 4:** clone this repository and `cd` into it.
-
-```bash
-git clone https://github.com/jpivarski-talks/2023-05-01-hsf-india-tutorial.git
-cd 2023-05-01-hsf-india-tutorial
-```
-
-**Step 5:** create an environment from `environment.yml`, which installs all of the software.
+**Step 3:** create an environment from `environment.yml`, which installs all of the software.
 
 ```bash
 mamba env create -f environment.yml
 ```
-
-**Step 6:** log into gpu01.indiacms.res.in with port forwarding.
-
-```bash
-ssh -L localhost:8889:localhost:8889 YOUR-USERNAME-HERE@gpu01.indiacms.res.in
-```
-
-**Step 7:** in the port-forwarding terminal, enter the new software environment.
+**Step 4:** enter this environment (every time you open a shell) with `mamba activate` or `conda activate`.
 
 ```bash
 mamba activate 2023-05-01-hsf-india-tutorial
 ```
 
-**Step 8:** in the port-forwarding terminal, start JupyterLab.
+**Step 5:** launch JupyterLab like this:
 
 ```bash
-cd 2023-05-01-hsf-india-tutorial
-jupyter lab --no-browser --port=8889
+jupyter lab
 ```
 
-**Step 9:** copy the `localhost:8889` URL that it provides to you into your laptop's web browser.
+# To get a similar environment
 
-You should see JupyterLab appear. Access to files are in the left-bar (top toolbar button if the left-bar is hidden). We'll start with `lesson-1.ipynb`.
+See [environment.yml](environment.yml). Each of these are are package names and versions. After setting up Mambaforge (steps 1 and 2, above), you can select individual packages to install with
+
+```python
+mamba install PACKAGE-NAME
+```
+
+Without specifying a version number, you'll get the latest mutually compatible set of packages (probably what you want). The version numbers in [environment.yml](environment.yml) are for reproducing exactly the environment we had at the time of the tutorial.
