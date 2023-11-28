@@ -32,7 +32,7 @@ dependencies:
     - pyarrow
     - pybind11
 #    - pytables==3.8.0
-    - python-xxhash
+#    - python-xxhash
     - root
     - scikit-learn
     - tensorflow-gpu
