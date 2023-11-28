@@ -37,6 +37,6 @@ dependencies:
     - pyarrow
     - pybind11
     - scikit-learn
-    - tensorflow-gpu
+#    - tensorflow-gpu
     - uproot
     - vector
