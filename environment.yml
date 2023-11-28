@@ -15,7 +15,7 @@ dependencies:
   - python-xxhash
   - root
   - zstandard
- - zstd
+  - zstd
   - pip:
     - awkward
     - clang-tools
