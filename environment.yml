@@ -31,7 +31,7 @@ dependencies:
     - protobuf
     - pyarrow
     - pybind11
-    - pytables
+    - pytables==3.8.0
     - python-xxhash
     - root
     - scikit-learn
