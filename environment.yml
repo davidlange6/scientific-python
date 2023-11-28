@@ -1,7 +1,10 @@
 name: 2023-05-01-hsf-india-tutorial
 channels:
   - conda-forge
+  - nvidia
 dependencies:
+  - cudatoolkit
+  - nvcc_linux-64
   - awkward==2.1.2
   - clang-tools==15.0.7
   - cudatoolkit==11.3.1
