@@ -12,5 +12,6 @@ export PATH=${PATH}:/usr/local/nvidia/bin
 
 #export CUDA_HOME=/srv/conda/envs/notebook/
 export CUDA_HOME=/usr/lib/x86_64-linux-gnu/
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=/srv/conda/envs/notebook/lib/
 
 exec "$@"
