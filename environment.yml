@@ -5,8 +5,7 @@ channels:
 dependencies:
   - cudatoolkit==11.7.0
 #  - cupy==12.0.0
-  - cupy-cuda11x
-  - cudnn==8.7
+  - cudnn
   - nvidia-ml
   - cxx-compiler==1.6.0
   - jupyterlab-deck==0.1.3
@@ -22,6 +21,7 @@ dependencies:
   - pip:
     - awkward
     - clang-tools
+    - cupy-cuda11x
     - fsspec
     - h5py
     - hepunits
