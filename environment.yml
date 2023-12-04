@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - nvidia
 dependencies:
-  - cudatoolkit==11.8.0
+  - cudatoolkit==11.7.0
   - cupy==12.0.0
   - cudnn
   - nvidia-ml
