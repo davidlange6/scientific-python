@@ -41,6 +41,6 @@ dependencies:
     - pyarrow
     - pybind11
     - scikit-learn
-    - tensorflow-gpu==2.14.0
+    - tensorflow-gpu==2.12.0
     - uproot
     - vector
