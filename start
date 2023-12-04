@@ -11,7 +11,8 @@ export LD_LIBRARY_PATH=${CONDA_PREFIX}/lib
 export PATH=${PATH}:/usr/local/nvidia/bin
 
 #export CUDA_HOME=/srv/conda/envs/notebook/
-export CUDA_HOME=/usr/lib/x86_64-linux-gnu/
+#export CUDA_HOME=/usr/lib/x86_64-linux-gnu/
+export CUDA_HOME=/srv/conda/envs/notebook/
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=/srv/conda/envs/notebook/lib/
 
 exec "$@"
