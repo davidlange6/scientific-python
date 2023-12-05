@@ -43,6 +43,7 @@ dependencies:
     - pyarrow
     - pybind11
     - scikit-learn
-    - tensorflow-gpu==2.11.0
+    # tensorflow 2.11.0 has errors I can not resolve..
+    - tensorflow-gpu==2.10.0
     - uproot
     - vector
