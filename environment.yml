@@ -4,6 +4,7 @@ channels:
   - nvidia
 dependencies:
   - cudatoolkit==11.7.0
+  - cudatoolkit-dev
   - cuda==11.7.0
 #  - cupy==12.0.0
   - cudnn
