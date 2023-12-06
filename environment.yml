@@ -1,4 +1,4 @@
-name: 2023-05-01-hsf-india-tutorial
+name: 2023-12-18-hsf-india
 channels:
   - conda-forge
   - nvidia
@@ -15,7 +15,7 @@ dependencies:
   - jupyterlab-mathjax3==4.3.0
   - python==3.10.11
   - pip
-  - nvcc_linux-64
+  - nvcc_linux-64==11.7
   - pytables
   - python-xxhash
   - root
