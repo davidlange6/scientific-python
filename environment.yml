@@ -1,13 +1,13 @@
 name: 2023-12-18-hsf-india
 channels:
   - conda-forge
-  - nvidia/label/cuda-11.7.0
+  - nvidia/label/cuda-11.8.0
 dependencies:
-  - cudatoolkit==11.7.0
+  - cudatoolkit==11.8.0
   - cudatoolkit-dev
   - cuda==11.7.0
-  - cuda-version==11.7.0
-  - cuda-libraries==11.7.0
+  - cuda-version==11.8.0
+  - cuda-libraries==11.8.0
 #  - cupy==12.0.0
   - cudnn
   - nvidia-ml
