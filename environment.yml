@@ -21,7 +21,7 @@ dependencies:
   - nvcc_linux-64==11.7
   - pytables
   - python-xxhash
-  - root [--clobber]
+  #- root [--clobber]
   - zstandard
   - zstd
   - pip:
