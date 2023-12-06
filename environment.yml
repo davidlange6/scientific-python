@@ -19,7 +19,7 @@ dependencies:
   - nvcc_linux-64==11.7
   - pytables
   - python-xxhash
-  - root==6.28.10
+#  - root
   - zstandard
   - zstd
   - pip:
