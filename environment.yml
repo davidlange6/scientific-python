@@ -1,7 +1,7 @@
 name: 2023-12-18-hsf-india
 channels:
   - conda-forge
-  - nvidia
+  - nvidia/label/cuda-11.7.0
 dependencies:
   - cudatoolkit==11.7.0
   - cudatoolkit-dev
