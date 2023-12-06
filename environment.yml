@@ -3,7 +3,6 @@ channels:
   - conda-forge
   - nvidia/label/cuda-11.7.0
 dependencies:
-  - --clobber
   - cudatoolkit==11.7.0
   - cudatoolkit-dev
   - cuda==11.7.0
@@ -22,7 +21,7 @@ dependencies:
   - nvcc_linux-64==11.7
   - pytables
   - python-xxhash
-  - root
+  - root [--clobber]
   - zstandard
   - zstd
   - pip:
