@@ -1,4 +1,1 @@
-#!/bin/bash
-
-conda install -y --clobber root
 
