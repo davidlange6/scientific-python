@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm /srv/conda/envs/notebook/README
+
+conda install root==5.30
