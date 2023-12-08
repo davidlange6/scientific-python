@@ -6,4 +6,5 @@ dependencies:
   - cuda-version==11.7
   - cudatoolkit==11.7.0
   - conda-libmamba-solver
+  - libarchive
   
