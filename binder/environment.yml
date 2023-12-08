@@ -245,8 +245,8 @@ dependencies:
   - requests==2.31.0
   - rfc3339-validator==0.1.4
   - rfc3986-validator==0.1.1
-  - root==6.28.0
-  - root_base==6.28.0
+#  - root==6.28.0
+#  - root_base==6.28.0
   - ruamel.yaml==0.17.31
   - ruamel.yaml.clib==0.2.7
   - scitokens-cpp==0.7.3
