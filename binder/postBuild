@@ -2,4 +2,4 @@
 
 rm /srv/conda/envs/notebook/README
 
-conda install root
+conda install --freeze-installed root==6.28.0 
