@@ -1,5 +1,6 @@
 #!/bin/bash
 
 rm /srv/conda/envs/notebook/README
+export LD_LIBRARY_PATH=${CONDA_PREFIX}/lib
 which conda
 conda install --freeze-installed root==6.28.0 
