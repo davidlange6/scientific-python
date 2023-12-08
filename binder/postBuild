@@ -1,5 +1,5 @@
 #!/bin/bash
 
 rm /srv/conda/envs/notebook/README
-
+which conda
 conda install --freeze-installed root==6.28.0 
