@@ -1,7 +1,8 @@
 #!/bin/bash
 
 conda config --set solver libmamba
-conda config --env --add channels nvidia/label/cuda-11.7.0 conda-forge
+conda config --env --add channels nvidia/label/cuda-11.7.0
+conda config --env --add channels conda-forge
 conda install --yes --file binder/conda_req.txt
 pip install --no-input -r binder/pip_req.txt
 #
