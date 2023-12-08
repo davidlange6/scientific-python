@@ -44,8 +44,9 @@ dependencies:
   - conda==23.10.0
   - cryptography==41.0.1
   - cuda-version==11.8
-  - cudatoolkit==11.8.0
-  - cudatoolkit-dev==11.8.0
+#  - cudatoolkit==11.8.0
+  - cuda-toolkit
+#  - cudatoolkit-dev==11.8.0
   - cudnn==8.8.0.121
   - cxx-compiler==1.5.2
   - davix==0.8.4
