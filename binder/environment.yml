@@ -5,3 +5,5 @@ channels:
 dependencies:
   - cuda-version==11.7
   - cudatoolkit==11.7.0
+  - base::conda-libmamba-solver
+  
