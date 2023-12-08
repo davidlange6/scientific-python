@@ -338,7 +338,7 @@ dependencies:
   - cuda-nvrtc-dev
   - cuda-nvtx
   - cuda-nvvp
-  - cuda-profiler-api
+#  - cuda-profiler-api
   - cuda-runtime
   - cuda-sanitizer-api
   - cuda-toolkit
