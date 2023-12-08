@@ -1,11 +1,11 @@
 #!/bin/bash
 
 conda config --set solver libmamba
-conda config --env --add channels nvidia/label/cuda-11.7.0
-#conda install --yes --file conda_req.txt
-#pip install --no-input -r pip_req.txt
+conda config --env --add channels nvidia/label/cuda-11.7.0 conda-forge
+conda install --yes --file binder/conda_req.txt
+pip install --no-input -r binder/pip_req.txt
 #
-rm /srv/conda/envs/notebook/README
+rm -f /srv/conda/envs/notebook/README
 conda install root==6.28.0 
 
 conda clean --yes --all
