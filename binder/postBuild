@@ -1,4 +1,8 @@
 #!/bin/bash
 
-rm /srv/conda/envs/notebook/README
-conda install --freeze-installed root==6.28.0 
+conda config --set solver libmamba
+#conda install --yes --file conda_req.txt
+#pip install --yes --file pip_req.txt
+#
+#rm /srv/conda/envs/notebook/README
+#conda install --freeze-installed root==6.28.0 
