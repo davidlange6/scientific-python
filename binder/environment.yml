@@ -51,7 +51,7 @@ dependencies:
   - debugpy==1.6.7
   - decorator==5.1.1
   - defusedxml==0.7.1
-  - emacs==28.2
+#  - emacs==28.2 -- conflicts with frozen env
   - entrypoints==0.4
   - exceptiongroup==1.1.1
   - executing==1.2.0
