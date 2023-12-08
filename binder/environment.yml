@@ -422,9 +422,9 @@ dependencies:
     - tensorflow-estimator==2.10.0
     - tensorflow-gpu==2.10.0
     - tensorflow-io-gcs-filesystem==0.34.0
-    - tensorrt==8.6.1.post1
-    - tensorrt-bindings==8.6.1
-    - tensorrt-libs==8.6.1
+#    - tensorrt==8.6.1.post1
+#    - tensorrt-bindings==8.6.1
+#    - tensorrt-libs==8.6.1
     - termcolor==2.4.0
     - threadpoolctl==3.2.0
     - tzdata==2023.3
