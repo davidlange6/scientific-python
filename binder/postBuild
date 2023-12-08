@@ -4,10 +4,14 @@ conda config --set solver libmamba
 conda config --env --add channels conda-forge
 conda config --env --add channels nvidia/label/cuda-11.7.0
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req.txt
+conda config --show channels
 pip install --no-input -r binder/pip_req.txt
-#
+conda config --show channels
+
 rm -f /srv/conda/envs/notebook/README
-CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install root==6.28.0 
+#conda really wants to change the channel of mamba...
+CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install root==6.28.0 conda-forge::libmamba==1.5.4 conda-forge::libmambapy==1.5.4
+
 
 conda clean --yes --all
 
