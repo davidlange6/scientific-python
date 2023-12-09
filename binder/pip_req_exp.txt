@@ -19,7 +19,6 @@ particle
 protobuf
 pyarrow
 pybind11
-pycuda
 scikit-learn
 tables
 tensorflow-gpu==2.10.0

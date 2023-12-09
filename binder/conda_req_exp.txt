@@ -1,9 +1,8 @@
 gxx==11.4.0
 gcc==11.4.0
-#cudatoolkit==11.7.0
-#cudatoolkit-dev==11.7.0
 cudnn==8.8.0.121
 cuda-nvcc
+emacs
 nvcc_linux-64==11.7
 zstandard
 zstd
@@ -11,6 +10,7 @@ clang-tools
 cupy
 fsspec
 lz4
+pycuda
 python==3.10.12
 python-xxhash
 
