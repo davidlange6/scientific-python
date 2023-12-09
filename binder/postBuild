@@ -10,12 +10,14 @@ conda config --env --remove channels defaults
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req_exp.txt
 conda config --show channels
 conda list
+conda list > post_conda.txt
 conda clean --yes --all
 echo "done with list post conda"
 
 pip install --no-input -r binder/pip_req_exp.txt
 conda config --show channels
 conda list
+conda list > post_pip.txt
 conda clean --yes --all
 echo "done with list post pip"
 
@@ -28,9 +30,13 @@ echo "Installing root"
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root==6.28.10
 echo "Done installing root"
 conda list
+conda list > post_root.txt
+
 echo "done with list post root"
  
 conda clean --yes --all
 
 export CUDA_HOME=/srv/conda/envs/notebook/pkgs/cuda-toolkit
 
+chmod +x binder/dosoft.sh
+binder/dosoft.sh
