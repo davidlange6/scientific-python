@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-for f in `find /srv/conda/envs/notebook/lib -size +10M -type f -name \*.so\*` 
+for f in `find /srv/conda/envs/notebook/lib -size +50M -type f -name \*.so\*` 
 do 
  basename=`echo $f | rev | cut -d/ -f1 | rev`
  echo "Looking for $f $basename"
