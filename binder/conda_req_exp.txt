@@ -1,1 +1,14 @@
 gxx==11.4.0
+cuda-toolkit
+cudatoolkit-dev==11.7.0
+cudnn==8.8.0.121
+nvcc_linux-64==11.7
+zstandard
+zstd
+clang-tools
+cupy
+fsspec
+lz4
+python==3.10.11
+python-xxhash
+
