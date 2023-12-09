@@ -4,7 +4,7 @@ conda config --set solver libmamba
 conda config --env --add channels conda-forge
 conda config --env --add channels nvidia/label/cuda-11.7.0
 
-conda config --env --remove channels default
+conda config --env --remove channels defaults
 
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req_exp.txt
 conda config --show channels
