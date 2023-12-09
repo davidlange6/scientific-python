@@ -9,6 +9,6 @@ clang-tools
 cupy
 fsspec
 lz4
-python==3.10.11
+python==3.10.12
 python-xxhash
 

@@ -16,7 +16,7 @@ particle
 protobuf
 pyarrow
 pybind11
-pytables
+#pytables
 scikit-learn
 tensorflow-gpu
 uproot
