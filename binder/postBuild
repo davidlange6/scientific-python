@@ -10,7 +10,7 @@ conda config --show channels
 
 rm -f /srv/conda/envs/notebook/README
 #conda really wants to change the channel of mamba...
-CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install root==6.28.0 conda-forge::libmamba==1.5.4 conda-forge::libmambapy==1.5.4
+CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install root==6.28.0
 
 
 conda clean --yes --all
