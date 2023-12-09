@@ -18,7 +18,7 @@ pyarrow
 pybind11
 #pytables
 scikit-learn
-tensorflow-gpu
+tensorflow-gpu==2.10.0
 uproot
 vector
   
