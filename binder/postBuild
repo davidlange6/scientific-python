@@ -27,7 +27,7 @@ rm -f /srv/conda/envs/notebook/README
 echo "Installing root"
 #options like --freeze-installed are ignored
 #conda config --set auto_update_conda False
-CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root==6.28.10
+CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root==6.28.0
 echo "Done installing root"
 conda list
 conda list > post_root.txt
