@@ -4,18 +4,26 @@ conda config --set solver libmamba
 conda config --env --add channels conda-forge
 conda config --env --add channels nvidia/label/cuda-11.7.0
 
+#conda really wants to change the channel of mamba...
 conda config --env --remove channels defaults
 
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req_exp.txt
 conda config --show channels
+conda list
+
 pip install --no-input -r binder/pip_req_exp.txt
 conda config --show channels
+conda list
 
+#ROOT has a directory called README. Conda can't deal with a file called README as well
 rm -f /srv/conda/envs/notebook/README
-#conda really wants to change the channel of mamba...
-CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --freeze-installed  root==6.28.0
 
+#options like --freeze-installed are ignored
+conda config --set auto_update_conda False
+CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root==6.28.0
+conda list
  
 conda clean --yes --all
 
+export CUDA_HOME=/srv/conda/envs/notebook/pkgs/cuda-toolkit
 
