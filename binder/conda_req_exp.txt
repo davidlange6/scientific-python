@@ -10,7 +10,7 @@ clang-tools
 cupy
 fsspec
 lz4
-pycuda
+#pycuda
 python==3.10.12
 python-xxhash
 

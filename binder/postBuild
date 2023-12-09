@@ -10,18 +10,21 @@ conda config --env --remove channels defaults
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req_exp.txt
 conda config --show channels
 conda list
+echo "done with list post conda"
 
 pip install --no-input -r binder/pip_req_exp.txt
 conda config --show channels
 conda list
+echo "done with list post pip"
 
 #ROOT has a directory called README. Conda can't deal with a file called README as well
 rm -f /srv/conda/envs/notebook/README
 
 #options like --freeze-installed are ignored
-conda config --set auto_update_conda False
+#conda config --set auto_update_conda False
 CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root==6.28.0
 conda list
+echo "done with list post root"
  
 conda clean --yes --all
 
