@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 conda config --set solver libmamba
 conda config --env --add channels conda-forge
 conda config --env --add channels nvidia/label/cuda-11.7.0
