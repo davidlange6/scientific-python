@@ -3,9 +3,10 @@ channels:
   - conda-forge
   - nvidia/label/cuda-11.7.0
 dependencies:
-  - cuda-version==11.7
-  - cudatoolkit==11.7.0
-  - cudatoolkit-dev==11.7.0
+#  - cuda-version==11.7
+#  - cudatoolkit==11.7.0
+#  - cudatoolkit-dev==11.7.0
   - conda-libmamba-solver
   - libarchive
-  
+  - cuda
+  - cuda-libraries-dev

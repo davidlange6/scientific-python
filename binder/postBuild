@@ -36,7 +36,6 @@ echo "done with list post root"
  
 conda clean --yes --all
 
-export CUDA_HOME=/srv/conda/envs/notebook/pkgs/cuda-toolkit
 
 chmod +x binder/dosoft.sh
 binder/dosoft.sh
