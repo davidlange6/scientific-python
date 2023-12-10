@@ -3,7 +3,7 @@ gcc
 #==11.4.0
 cudnn
 #==8.8.0.121
-cuda-nvcc
+#cuda-nvcc
 emacs
 #nvcc_linux-64==11.7
 zstandard
