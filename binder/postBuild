@@ -31,11 +31,11 @@ echo "Installing root"
 #conda config --set auto_update_conda False
 #skip root for now
 #CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root
-echo "Done installing root"
-conda list
-conda list > post_root.txt
-
-echo "done with list post root"
+#echo "Done installing root"
+#conda list
+#conda list > post_root.txt
+#
+#echo "done with list post root"
  
 conda clean --yes --all
 
