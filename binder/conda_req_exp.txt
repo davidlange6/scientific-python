@@ -1,7 +1,7 @@
 #gxx==11.4.0
-gcc
+#gcc
 #==11.4.0
-cudnn
+#cudnn
 #==8.8.0.121
 #cuda-nvcc
 emacs

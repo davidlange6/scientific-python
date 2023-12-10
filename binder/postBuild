@@ -4,7 +4,7 @@ conda config --set solver libmamba
 conda config --env --add channels conda-forge
 conda config --env --add channels nvidia/label/cuda-11.7.0
 
-conda install --yes cuda -c nvidia/label/cuda-11.7.0
+conda install --yes cuda cuda-cudart -c nvidia/label/cuda-11.7.0
 
 #conda really wants to change the channel of mamba...
 conda config --env --remove channels defaults
@@ -29,7 +29,8 @@ rm -f /srv/conda/envs/notebook/README
 echo "Installing root"
 #options like --freeze-installed are ignored
 #conda config --set auto_update_conda False
-CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root
+#skip root for now
+#CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root
 echo "Done installing root"
 conda list
 conda list > post_root.txt
