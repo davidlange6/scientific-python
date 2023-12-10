@@ -9,7 +9,9 @@ export LD_LIBRARY_PATH=${CONDA_PREFIX}/lib
 
 # Also, utilities like `nvidia-smi` are installed here
 export PATH=${PATH}:/usr/local/nvidia/bin
-export CUDA_HOME=/srv/conda/envs/notebook/
+#export CUDA_HOME=/srv/conda/envs/notebook/
 #export XLA_FLAGS=--xla_gpu_cuda_data_dir=/srv/conda/envs/notebook/lib/
+
+export CUDA_HOME=/srv/conda/envs/notebook/pkgs/cuda-toolkit
 
 exec "$@"
