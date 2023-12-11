@@ -32,7 +32,6 @@ dependencies:
       - particle
       - protobuf
       - pyarrow
-      - pycuda
       - pybind11
       - scikit-learn
       - tables
