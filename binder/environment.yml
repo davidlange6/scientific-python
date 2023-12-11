@@ -3,7 +3,7 @@ channels:
   - defaults
   - nvidia/label/cuda-11.7.1
 dependencies:
-  - python=3.10
+  - python
   - cudatoolkit=11.7
   - cudatoolkit-dev=11.7 
   - cudnn=8.1.0
