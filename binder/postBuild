@@ -1,45 +1,45 @@
 #!/bin/bash
 set -e
-conda config --set solver libmamba
-conda config --env --add channels nvidia/label/cuda-11.1.0
+#conda config --set solver libmamba
+#conda config --env --add channels nvidia/label/cuda-11.1.0
 
-conda install --yes cuda cuda-cudart cudnn -c nvidia/label/cuda-11.1.0
+#conda install --yes cuda cuda-cudart cudnn -c nvidia/label/cuda-11.1.0
 
-conda config --env --add channels conda-forge
+#conda config --env --add channels conda-forge
 
-#conda really wants to change the channel of mamba...
-#conda config --env --remove channels defaults
+##conda really wants to change the channel of mamba...
+##conda config --env --remove channels defaults
 
-CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req_exp.txt
-conda config --show channels
-conda list
-conda list > post_conda.txt
-conda clean --yes --all
-echo "done with list post conda"
-
-pip install --no-input -r binder/pip_req_exp.txt
-conda config --show channels
-conda list
-conda list > post_pip.txt
-conda clean --yes --all
-echo "done with list post pip"
-
-#ROOT has a directory called README. Conda can't deal with a file called README as well
-rm -f /srv/conda/envs/notebook/README
-
-echo "Installing root"
-#options like --freeze-installed are ignored
-#conda config --set auto_update_conda False
-#skip root for now
-#CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root
-#echo "Done installing root"
+#CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes --file binder/conda_req_exp.txt
+#conda config --show channels
 #conda list
-#conda list > post_root.txt
+#conda list > post_conda.txt
+#conda clean --yes --all
+#echo "done with list post conda"
 #
-#echo "done with list post root"
- 
-conda clean --yes --all
-
-
-chmod +x binder/dosoft.sh
-binder/dosoft.sh
+#pip install --no-input -r binder/pip_req_exp.txt
+#conda config --show channels
+#conda list
+#conda list > post_pip.txt
+#conda clean --yes --all
+#echo "done with list post pip"
+#
+##ROOT has a directory called README. Conda can't deal with a file called README as well
+#rm -f /srv/conda/envs/notebook/README
+#
+#echo "Installing root"
+##options like --freeze-installed are ignored
+##conda config --set auto_update_conda False
+##skip root for now
+##CONDA_AGGRESSIVE_UPDATE_PACKAGES='' conda install --yes   root
+##echo "Done installing root"
+##conda list
+##conda list > post_root.txt
+##
+##echo "done with list post root"
+# 
+#conda clean --yes --all
+#
+#
+#chmod +x binder/dosoft.sh
+#binder/dosoft.sh

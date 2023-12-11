@@ -1,13 +1,15 @@
-name: 2023-12-18-hsf-india
+name: tensorflow
 channels:
-#  - nvidia/label/cuda-11.7.0
-  - conda-forge
+  - defaults
+  - nvidia/label/cuda-11.7.1
 dependencies:
-#  - cuda-version==11.7
-#  - cudatoolkit==11.7.0
-#  - cudatoolkit-dev==11.7.0
-  - conda-libmamba-solver
-  - libarchive
-# - cuda
-# a no op I think
-#  - cuda-libraries-dev
+  - python=3.10
+  - cudatoolkit=11.7
+  - cudnn=8.1.0
+  - cuda-nvcc
+  - pip
+  - pip:
+      - tensorflow==2.11.0
+variables:
+  LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
+  XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/'"
