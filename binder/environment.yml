@@ -19,8 +19,31 @@ dependencies:
   - python-xxhash
   - pip:
       - tensorflow-gpu==2.11.0
-#      - nvidia-pyindex
-#      - nvidia-tensorrt
+      - astunparse
+      - awkward
+      - dask
+      - dask-awkward
+      - distributed
+      - h5py
+      - hepunits
+      - hist
+      - ipympl
+      - jupyterlab-deck
+      - jupyterlab-mathjax3
+      - matplotlib
+      - numba
+      - numexpr
+      - numpy
+      - pandas
+      - particle
+      - protobuf
+      - pyarrow
+      - pybind11
+      - scikit-learn
+      - tables
+      - uproot
+      - vector
+  
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"

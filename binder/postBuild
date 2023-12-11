@@ -1,5 +1,12 @@
 #!/bin/bash
 set -e
+
+mkdir /srv/conda/envs/notebook/lib/nvvm
+mkdir /srv/conda/envs/notebook/lib/nvvm/libdevice
+ln -s /srv/conda/envs/notebook/lib/libdevice.10.bc /srv/conda/envs/notebook/lib/nvvm/libdevice/libdevice.10.bc
+pip install nvidia-pyindex
+pip install nvidia-tensorrt
+
 #conda config --set solver libmamba
 #conda config --env --add channels nvidia/label/cuda-11.1.0
 
