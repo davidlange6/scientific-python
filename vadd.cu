@@ -66,7 +66,7 @@ int main(){
         }
         assert(fabs(out[i] - a[i] - b[i]) < MAX_ERR);
     }
-    print("SUCCESS!\n");
+    printf("SUCCESS!\n");
     
     // Deallocate device memory
     cudaFree(d_a);
