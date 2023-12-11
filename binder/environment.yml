@@ -20,6 +20,7 @@ dependencies:
   - python-xxhash
   - pip:
       - tensorflow==2.13
+      - tensorrt
       - cupy-cuda11x
       - astunparse
       - awkward
@@ -40,6 +41,7 @@ dependencies:
       - particle
       - protobuf
       - pyarrow
+      - pycuda
       - pybind11
       - scikit-learn
       - tables
@@ -49,4 +51,4 @@ dependencies:
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
-  XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/'"
+  XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/'"
