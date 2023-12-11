@@ -3,9 +3,9 @@ channels:
   - defaults
   - nvidia/label/cuda-11.7.1
 dependencies:
-  - python=3.10.12
+  - python=3.10
   - cudatoolkit=11.7
-  - cudatoolkit-dev=11.7
+  - cudatoolkit-dev=11.7 
   - cudnn=8.1.0
   - cuda-nvcc
   - pip
@@ -19,6 +19,8 @@ dependencies:
   - python-xxhash
   - pip:
       - tensorflow-gpu==2.11.0
+      - nvidia-pyindex
+      - nvidia-tensorrt
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
