@@ -19,8 +19,8 @@ dependencies:
   - python-xxhash
   - pip:
       - tensorflow-gpu==2.11.0
-      - nvidia-pyindex
-      - nvidia-tensorrt
+#      - nvidia-pyindex
+#      - nvidia-tensorrt
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
