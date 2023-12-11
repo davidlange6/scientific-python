@@ -1,12 +1,13 @@
 name: tensorflow
 channels:
   - defaults
-  - nvidia/label/cuda-11.7.1
+  - nvidia/label/cuda-11.8.0
 dependencies:
   - python=3.10
-  - cudatoolkit=11.7
-  - cudatoolkit-dev=11.7 
+  - cudatoolkit=11.8
+  - cudatoolkit-dev=11.8
 #  - cudnn=8.1.0
+  - cudnn=8.9.6
   - cuda-nvcc
   - pip
   - emacs
@@ -17,7 +18,7 @@ dependencies:
   - lz4
   - python-xxhash
   - pip:
-      - tensorflow[and-cuda]==2.14.1
+      - tensorflow==2.13
       - cupy-cuda11x
       - astunparse
       - awkward
