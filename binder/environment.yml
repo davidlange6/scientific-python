@@ -6,7 +6,7 @@ dependencies:
   - python=3.10
   - cudatoolkit=11.7
   - cudatoolkit-dev=11.7 
-  - cudnn=8.1.0
+#  - cudnn=8.1.0
   - cuda-nvcc
   - pip
   - emacs
@@ -17,7 +17,7 @@ dependencies:
   - lz4
   - python-xxhash
   - pip:
-      - tensorflow==2.14.1
+      - tensorflow[and-cuda]==2.14.1
       - cupy-cuda11x
       - astunparse
       - awkward
