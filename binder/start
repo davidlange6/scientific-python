@@ -1,6 +1,3 @@
 #!/bin/bash
 
-# utilities like `nvidia-smi` are installed here
-export PATH=${PATH}:/usr/local/nvidia/bin
-
 exec "$@"
