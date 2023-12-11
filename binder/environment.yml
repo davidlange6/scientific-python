@@ -18,7 +18,7 @@ dependencies:
   - python-xxhash
   - pip:
       - tensorflow==2.14.1
-#      - cupy
+      - cupy-cuda11x
       - astunparse
       - awkward
       - dask
