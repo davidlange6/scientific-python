@@ -1,12 +1,8 @@
 name: hsf-india
 channels:
   - defaults
-  - nvidia/label/cuda-11.8.0
 dependencies:
   - python=3.10
-  - cuda=11.8
-  - cudnn=8.9.2
-  - cuda-nvcc
   - pip
   - emacs
   - zstandard
@@ -15,10 +11,8 @@ dependencies:
   - fsspec
   - lz4
   - python-xxhash
+  - root
   - pip:
-      - tensorflow==2.13
-      - tensorrt
-      - cupy-cuda11x
       - astunparse
       - awkward
       - dask
@@ -48,4 +42,3 @@ dependencies:
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
-  XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/'"
