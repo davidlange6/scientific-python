@@ -8,13 +8,15 @@ dependencies:
   - cudnn=8.9.2
   - cuda-nvcc
   - pip
-  - emacs
+#  - emacs
   - zstandard
   - zstd
   - clang-tools
   - fsspec
   - lz4
   - python-xxhash
+  - pytorch-gpu=2.0.0
+  - rapidsai::cudf=23.02.00
   - pip:
       - tensorflow==2.13
       - tensorrt
@@ -44,6 +46,12 @@ dependencies:
       - tables
       - uproot
       - vector
+      - mplhep
+      - requests
+      - aiohttp
+      - jax[cpu]
+      - graphviz
+      - dask-labextension==6.2.0
 
       
 variables:
