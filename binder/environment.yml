@@ -53,7 +53,9 @@ dependencies:
       - graphviz
       - dask-labextension==6.2.0
       - torch==2.0.0
-      - torchvision==2.0.0
+      - torchvision
+      - torchvision
+      - torchaudio
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
