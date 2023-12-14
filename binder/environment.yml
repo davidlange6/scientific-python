@@ -41,7 +41,7 @@ dependencies:
       - vector
       - mplhep
       - requests
-      - aithttp
+      - aiohttp
       - jax[cpu]
       - graphviz
       - dask-labextension==6.2.0
