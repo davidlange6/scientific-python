@@ -13,6 +13,7 @@ dependencies:
   - python-xxhash
   - root
   - geant4
+  - cmake
   - pip:
       - astunparse
       - awkward
@@ -38,7 +39,12 @@ dependencies:
       - tables
       - uproot
       - vector
-
+      - mplhep
+      - requests
+      - aithttp
+      - jax[cpu]
+      - graphviz
+      - dask-labextension==6.2.0
       
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
