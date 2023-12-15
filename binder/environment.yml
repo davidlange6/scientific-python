@@ -61,3 +61,5 @@ dependencies:
 variables:
   LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"
   XLA_FLAGS: "'--xla_gpu_cuda_data_dir=$CONDA_PREFIX/'"
+  NUMBA_CUDA_ENABLE_MINOR_VERSION_COMPATIBILITY: "1"
+  
