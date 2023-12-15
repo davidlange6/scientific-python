@@ -14,13 +14,15 @@ dependencies:
   - clang-tools
   - fsspec
   - lz4
+  - pyarrow
   - python-xxhash
 #  - pytorch-gpu=2.0.0 -> seems to need to come after cuda
   - rapidsai::cudf=23.02.00
   - pip:
       - tensorflow==2.13
       - tensorrt
-      - cupy-cuda11x
+      #- cupy
+      #-cuda11x
       - astunparse
       - awkward
       - dask
@@ -39,7 +41,6 @@ dependencies:
       - pandas
       - particle
       - protobuf
-      - pyarrow
       - pycuda
       - pybind11
       - scikit-learn
